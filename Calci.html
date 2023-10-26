@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sk's Calci</title>
+	<link rel="stylesheet" type="text/css" href="Calci.css">
+</head>
+<body class="bd">
+	<div class="main">
+		<form class="form">
+			<div>
+				<input type="text" name="op" class="op">
+			</div>
+			<div>
+				<input type="button" value="Ac" onclick="op.value=''" class="ac" id="ac12">
+				<input type="button" value="C" onclick="op.value=cop(op.value)" class="ope">
+				<input type="button" value="%" onclick="op.value+='%'" class="ope">
+			</div>
+			<div>
+				<input type="button" value="7" onclick="op.value+='7'">
+				<input type="button" value="8" onclick="op.value+='8'">
+				<input type="button" value="9" onclick="op.value+='9'">
+				<input type="button" value="+" onclick="op.value+='+'" class="ope">
+
+			</div>
+			<div>
+				<input type="button" value="4" onclick="op.value+='4'">
+				<input type="button" value="5" onclick="op.value+='5'">
+				<input type="button" value="6" onclick="op.value+='6'">
+				<input type="button" value="-" onclick="op.value+='-'" class="ope">
+
+			</div>
+			<div>
+				<input type="button" value="1" onclick="op.value+='1'">
+				<input type="button" value="2" onclick="op.value+='2'">
+				<input type="button" value="3" onclick="op.value+='3'">
+				<input type="button" value="/" onclick="op.value+='/'" class="ope">
+
+			</div>
+			<div>
+				<input type="button" value="." onclick="op.value+='.'">
+				<input type="button" value="0" onclick="op.value+='0'">
+				<input type="button" value="=" onclick="op.value=eval(op.value)">
+				<input type="button" value="*" onclick="op.value+='*'" class="ope">
+
+			</div>
+		</form>
+		
+	</div>
+	<script type="text/javascript">
+		function cop(a) {
+			let d=a.split('');
+			d.pop();
+			let b=d.join('')
+		  return b;
+		}
+	</script>
+
+</body>
+</html>

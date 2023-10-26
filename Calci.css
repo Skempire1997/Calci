@@ -1,0 +1,86 @@
+:root{
+	--main-bg-color:linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+	--bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+	--border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
+  );
+  --text-hover-col:linear-gradient(to left #f7cf3e,#f5cb33);
+
+	
+}
+body{
+	background-image: url(https://wallpapers.com/images/high/mathematics-equation-with-apple-logo-8q1n6j3tqp4yflyg.webp);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.main{
+	position: fixed;
+	margin: 8% 40%;
+	background: var(--bg-gradient-jet);
+    padding: 20px;
+	height: 370px;
+	width: 280px;
+	border-radius: 35px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding: 20px;
+	border: 0,5px dotted black;
+}
+
+.ac{
+	width: 117px;
+}
+input{
+	background: var(--main-bg-color);
+
+	margin: 8px;
+	width: 50px;
+	height: 40px;
+	background-color: b;
+	color: whitesmoke;
+	border: 0.1px solid black;
+	border-radius: 25px;
+	font-size: 20px;
+
+}
+.ope : hover{
+	transform: scale(0.9);
+}
+
+.form{
+	height: 370px;
+	width: 280px;
+	border: 1px solid ;
+	border-color: var(--text-gradient-yellow);
+	border-radius: 10px;
+	transition-duration: 1s;
+}
+input[type="button"]:hover{
+	transform: scale(0.9);
+	box-shadow: 1px 1px 1px whitesmoke;
+}
+
+.op{
+	height: 70px;
+	width: 260px;
+	margin: 8px 10px 10px;
+	border: 0.8px dotted black;
+	background:whitesmoke ;
+	color: black;
+	text-align: right;
+}
