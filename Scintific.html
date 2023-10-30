@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sk's Calci</title>
+	<link rel="stylesheet" type="text/css" href="Calci.css">
+</head>
+<body class="bd-sci">
+	
+	<div class="main-sci">
+		
+		<form class="form-sci">
+			<div>
+				<input type="text" name="op" class="op-sci">
+			</div>
+			<div class="but1">
+				<a href="Calci.html"><input type="button" value="Arth"  class="ope"></a>
+				<input type="button" value="Ac" onclick="op.value=''"  id="ac12">
+				<input type="button" value="C" onclick="op.value=cop(op.value)" class="ope">
+				<input type="button" value="(" onclick="op.value+='('" class="ope">
+				<input type="button" value=")" onclick="op.value+=')'" class="ope">
+				<input type="button" value="x&#94;" onclick="op.value+='**'" class="ope">
+				
+				
+				
+			</div>
+			<div>
+				<input type="button" value="7" onclick="op.value+='7'">
+				<input type="button" value="8" onclick="op.value+='8'">
+				<input type="button" value="9" onclick="op.value+='9'">
+				<input type="button" value="+" onclick="op.value+='+'" class="ope">
+				<input type="button" value="sin" onclick="op.value+='sin'" class="ope">
+				<input type="button" value="&#960;" onclick="op.value+='3.14159265359'" class="ope">
+
+			</div>
+			<div>
+				<input type="button" value="4" onclick="op.value+='4'">
+				<input type="button" value="5" onclick="op.value+='5'">
+				<input type="button" value="6" onclick="op.value+='6'">
+				<input type="button" value="-" onclick="op.value+='-'" class="ope">
+				<input type="button" value="cos" onclick="op.value+='cos'" class="ope">
+				<input type="button" value="&#8730;"onclick="op.value+='&#8730;'op.value=squareRoot(op.value)">
+
+			</div>
+			<div>
+				<input type="button" value="1" onclick="op.value+='1'">
+				<input type="button" value="2" onclick="op.value+='2'">
+				<input type="button" value="3" onclick="op.value+='3'">
+				<input type="button" value="/" onclick="op.value+='/'" class="ope">
+				<input type="button" value="tan" onclick="op.value+='tan'" class="ope">
+				<input type="button" value="log" onclick="op.value+='**'" class="ope">
+
+			</div>
+			
+			<div>
+				<input type="button" value="." onclick="op.value+='.'">
+				<input type="button" value="0" onclick="op.value+='0'">
+				<input type="button" value="=" onclick="op.value=eval(op.value)">
+				<input type="button" value="*" onclick="op.value+='*'" class="ope">
+				<input type="button" value="%" onclick="op.value+='%'" class="ope">
+				<input type="button" value="e" onclick="op.value+='2.71828182846'" class="ope">
+				
+
+			</div>
+		</form>
+		
+	</div>
+	<script type="text/javascript" >
+		function cop(a) {
+			let d=a.split('');
+			d.pop();
+			let b=d.join('')
+		  return b;
+		}
+		function squareRoot(a) {
+			let d=a.split('');
+			d.shift();
+			let b=d.join('')
+			
+			let c=let x = Math.sqrt(b);
+			return c;
+
+		}
+		
+	</script>
+
+</body>
+</html>

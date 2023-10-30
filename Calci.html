@@ -7,24 +7,27 @@
 	<link rel="stylesheet" type="text/css" href="Calci.css">
 </head>
 <body class="bd">
+	
 	<div class="main">
+		
 		<form class="form">
 			<div>
-				<input type="text" name="op" class="op">
+				<input type="text"  name="op" class="op">
 			</div>
-			<div>
-				<input type="button" value="Ac" onclick="op.value=''" class="ac" id="ac12">
+			<div >
+				<a href="scintific.html"><input type="button" value="sci" onclick="op.value+='%'" class="ope"></a>
+				<input type="button" value="Ac" onclick="op.value=''"  id="ac12">
 				<input type="button" value="C" onclick="op.value=cop(op.value)" class="ope">
 				<input type="button" value="%" onclick="op.value+='%'" class="ope">
 			</div>
-			<div>
+			<div >
 				<input type="button" value="7" onclick="op.value+='7'">
 				<input type="button" value="8" onclick="op.value+='8'">
 				<input type="button" value="9" onclick="op.value+='9'">
 				<input type="button" value="+" onclick="op.value+='+'" class="ope">
 
 			</div>
-			<div>
+			<div >
 				<input type="button" value="4" onclick="op.value+='4'">
 				<input type="button" value="5" onclick="op.value+='5'">
 				<input type="button" value="6" onclick="op.value+='6'">

@@ -27,10 +27,12 @@ body{
 	background-image: url(https://wallpapers.com/images/high/mathematics-equation-with-apple-logo-8q1n6j3tqp4yflyg.webp);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	position: fixed;
 }
 .main{
 	position: fixed;
-	margin: 8% 40%;
+	position: static;
+	margin: 35% 165%;
 	background: var(--bg-gradient-jet);
     padding: 20px;
 	height: 370px;
@@ -48,7 +50,7 @@ body{
 input{
 	background: var(--main-bg-color);
 
-	margin: 8px;
+	margin: 8px ;
 	width: 50px;
 	height: 40px;
 	background-color: b;
@@ -73,6 +75,7 @@ input{
 input[type="button"]:hover{
 	transform: scale(0.9);
 	box-shadow: 1px 1px 1px whitesmoke;
+	color: orange;
 }
 
 .op{
@@ -84,3 +87,39 @@ input[type="button"]:hover{
 	color: black;
 	text-align: right;
 }
+/*scintific starts*/
+.main-sci{
+
+	position: fixed;
+	position: static;
+	margin: 18% 100%;
+	background: var(--bg-gradient-jet);
+  padding: 20px;
+	height: 400px;
+	width: 420px;
+	border-radius: 35px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding: 20px;
+	border: 0,5px dotted black;
+
+}
+.form-sci{
+	height: 400px;
+	width: 420px;
+	border: 1px solid ;
+	border-color: var(--text-gradient-yellow);
+	border-radius: 10px;
+	transition-duration: 1s;
+}
+.op-sci{
+	height: 90px;
+	width: 352px;
+	margin: 10px 10px 10px;
+	border: 0.8px dotted black;
+	background:whitesmoke ;
+	color: black;
+	text-align: right;
+}
+
+
